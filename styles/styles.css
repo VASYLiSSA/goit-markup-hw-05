@@ -87,10 +87,33 @@ p {font-size: 1.2em;}
     height: 100%;
     background: rgba(33, 150, 243, 0.9);
     color: #FFFFFF;
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 28px;
     overflow: auto;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 63px 24px;
+}
+
+.thumb-label {
+    background: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 70px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 .portfolio-img {
@@ -143,6 +166,7 @@ p {font-size: 1.2em;}
     padding: 32px 0;
     display: flex;
     align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-kontact a:hover {
@@ -209,6 +233,7 @@ body {
     padding-top: 32px;
     padding-bottom: 32px;
     display: inline-block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .page-navigation a:hover, .page-navigation a:focus {
     color: var(--accent-color);
@@ -237,7 +262,8 @@ body {
     left: 0;
     top: 0;
     background: rgba(0, 0, 0, 0.2);
-    box-shadow: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -266,6 +292,7 @@ body {
     border-radius: 50%;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
 .hero-button {
@@ -310,7 +337,7 @@ body {
     border-radius: 4px;
     border: 0px;
     padding: 6px 22px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), bbox-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -458,6 +485,7 @@ h1 {
 
 .footer-contacts-li a {
     color: rgba(255,255,255,0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contacts-li {
@@ -604,7 +632,7 @@ address {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:focus {
@@ -654,7 +682,7 @@ address {
 
 
 .social-link:hover, .social-link:focus {
-    background: #2196F3;;
+    background-color: #2196F3;
     fill: #FFFF;
 }
 
